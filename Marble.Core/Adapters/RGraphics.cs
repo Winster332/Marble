@@ -165,18 +165,6 @@ namespace Marble.Core.Adapters
 		public abstract RSize MeasureString(string str, RFont font);
 
 		/// <summary>
-		/// Measure the width of string under max width restriction calculating the number of characters that can fit and the width those characters take.<br/>
-		/// Not relevant for platforms that don't render HTML on UI element.
-		/// </summary>
-		/// <param name="str">the string to measure</param>
-		/// <param name="font">the font to measure string with</param>
-		/// <param name="maxWidth">the max width to calculate fit characters</param>
-		/// <param name="charFit">the number of characters that will fit under <see cref="maxWidth"/> restriction</param>
-		/// <param name="charFitWidth">the width that only the characters that fit into max width take</param>
-		public abstract void MeasureString(string str, RFont font, double maxWidth, out int charFit,
-			out double charFitWidth);
-
-		/// <summary>
 		/// Draw the given string using the given font and foreground color at given location.
 		/// </summary>
 		/// <param name="str">the string to draw</param>

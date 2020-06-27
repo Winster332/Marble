@@ -16,65 +16,14 @@ namespace Marble.WinForms.Adapters
 	/// </summary>
 	public sealed class GraphicsAdapter : RGraphics
 	{
-		#region Fields and Consts
-
-		/// <summary>
-		/// Used for GDI+ measure string.
-		/// </summary>
-		private static readonly CharacterRange[] _characterRanges = new CharacterRange[1];
-
-		/// <summary>
-		/// The string format to use for measuring strings for GDI+ text rendering
-		/// </summary>
-		private static readonly StringFormat _stringFormat;
-
-		/// <summary>
-		/// The string format to use for rendering strings for GDI+ text rendering
-		/// </summary>
-		private static readonly StringFormat _stringFormat2;
-
-		/// <summary>
-		/// The wrapped WinForms graphics object
-		/// </summary>
 		private readonly IRenderer _g;
 
-		/// <summary>
-		/// if to release the graphics object on dispose
-		/// </summary>
-		private readonly bool _releaseGraphics;
-
-		/// <summary>
-		/// If text alignment was set to RTL
-		/// </summary>
-		private bool _setRtl;
-
-		#endregion
-
-
-		/// <summary>
-		/// Init static resources.
-		/// </summary>
-		static GraphicsAdapter()
-		{
-			_stringFormat = new StringFormat(StringFormat.GenericTypographic);
-			_stringFormat.FormatFlags = StringFormatFlags.NoClip | StringFormatFlags.MeasureTrailingSpaces;
-
-			_stringFormat2 = new StringFormat(StringFormat.GenericTypographic);
-		}
-
-		/// <summary>
-		/// Init.
-		/// </summary>
-		/// <param name="g">the win forms graphics object to use</param>
-		/// <param name="useGdiPlusTextRendering">Use GDI+ text rendering to measure/draw text</param>
-		/// <param name="releaseGraphics">optional: if to release the graphics object on dispose (default - false)</param>
-		public GraphicsAdapter(IRenderer g, bool releaseGraphics = false)
+		public GraphicsAdapter(IRenderer g)
 			: base(WinFormsAdapter.Instance, g.ClipBounds)
 		{
 			ArgChecker.AssertArgNotNull(g, "g");
 
 			_g = g;
-			_releaseGraphics = releaseGraphics;
 		}
 
 		public override void PopClip()
@@ -116,7 +65,6 @@ namespace Marble.WinForms.Adapters
 
 		public override RSize MeasureString(string str, RFont font)
 		{
-			// SetFont(font);
 			var f = ((FontAdapter) font).Font;
 			var textSize = SkRenderer.GetTextBound(str, f);
 			var size = new Size((int) textSize.Width, (int) textSize.Height);
@@ -175,12 +123,6 @@ namespace Marble.WinForms.Adapters
 			return Utils.Convert(size);
 		}
 
-		public override void MeasureString(string str, RFont font, double maxWidth, out int charFit,
-			out double charFitWidth)
-		{
-			charFit = 0;
-			charFitWidth = 0;
-		}
 
 		public override void DrawString(string str, RFont font, RColor color, RPoint point, RSize size, bool rtl)
 		{
@@ -198,7 +140,7 @@ namespace Marble.WinForms.Adapters
 						Color = colorConv
 					}, false),
 					pointConv.X,
-					pointConv.Y, _stringFormat2);
+					pointConv.Y, StringFormat.GenericTypographic);
 				// }
 				// else
 				// {
@@ -225,12 +167,8 @@ namespace Marble.WinForms.Adapters
 
 		public override void Dispose()
 		{
-			if (_releaseGraphics)
-				_g.Dispose();
+				// _g.Dispose();
 		}
-
-
-		#region Delegate graphics methods
 
 		public override void DrawLine(RPen pen, double x1, double y1, double x2, double y2)
 		{
@@ -274,30 +212,5 @@ namespace Marble.WinForms.Adapters
 				_g.FillPolygon(brush, Utils.Convert(points));
 			}
 		}
-
-		#endregion
-
-
-		#region Private methods
-
-		/// <summary>
-		/// Change text align to Left-to-Right or Right-to-Left if required.
-		/// </summary>
-		private void SetRtlAlignGdiPlus(bool rtl)
-		{
-			if (_setRtl)
-			{
-				if (!rtl)
-					_stringFormat2.FormatFlags ^= StringFormatFlags.DirectionRightToLeft;
-			}
-			else if (rtl)
-			{
-				_stringFormat2.FormatFlags |= StringFormatFlags.DirectionRightToLeft;
-			}
-
-			_setRtl = rtl;
-		}
-
-		#endregion
 	}
 }
