@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marble.Core", "Marble.Core\Marble.Core.csproj", "{97C6B7D8-FDEB-44E7-82F8-445E9AF9A5F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{9171F2A5-00FF-465E-AD3D-A4AEDE938004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marble.Sample.WinForm", "Samples\Marble.Sample.WinForm\Marble.Sample.WinForm.csproj", "{A5EAFD41-27FA-4B29-8F19-55B6FA29728C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marble.WinForms", "Marble.WinForms\Marble.WinForms.csproj", "{E2D600C8-A451-487F-AC45-EF4CA3DF5C80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97C6B7D8-FDEB-44E7-82F8-445E9AF9A5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C6B7D8-FDEB-44E7-82F8-445E9AF9A5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C6B7D8-FDEB-44E7-82F8-445E9AF9A5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C6B7D8-FDEB-44E7-82F8-445E9AF9A5F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5EAFD41-27FA-4B29-8F19-55B6FA29728C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5EAFD41-27FA-4B29-8F19-55B6FA29728C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5EAFD41-27FA-4B29-8F19-55B6FA29728C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5EAFD41-27FA-4B29-8F19-55B6FA29728C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2D600C8-A451-487F-AC45-EF4CA3DF5C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2D600C8-A451-487F-AC45-EF4CA3DF5C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2D600C8-A451-487F-AC45-EF4CA3DF5C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2D600C8-A451-487F-AC45-EF4CA3DF5C80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A5EAFD41-27FA-4B29-8F19-55B6FA29728C} = {9171F2A5-00FF-465E-AD3D-A4AEDE938004}
+	EndGlobalSection
+EndGlobal

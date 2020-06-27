@@ -1,0 +1,202 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Marble.Sample.WinForm/1.0.0": {
+        "dependencies": {
+          "Marble.WinForms": "1.0.0"
+        },
+        "runtime": {
+          "Marble.Sample.WinForm.dll": {}
+        }
+      },
+      "SkiaSharp/2.80.0-preview.14": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.dll": {
+            "assemblyVersion": "2.80.0.0",
+            "fileVersion": "2.80.0.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/android-arm/native/libSkiaSharp.so": {
+            "rid": "android-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/android-arm64/native/libSkiaSharp.so": {
+            "rid": "android-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/android-x64/native/libSkiaSharp.so": {
+            "rid": "android-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/android-x86/native/libSkiaSharp.so": {
+            "rid": "android-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/ios/native/libSkiaSharp.framework/Info.plist": {
+            "rid": "ios",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/ios/native/libSkiaSharp.framework/Modules/module.modulemap": {
+            "rid": "ios",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/ios/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {
+            "rid": "ios",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/ios/native/libSkiaSharp.framework/libSkiaSharp": {
+            "rid": "ios",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tizen-armel/native/libSkiaSharp.so": {
+            "rid": "tizen-armel",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tizen-x86/native/libSkiaSharp.so": {
+            "rid": "tizen-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tvos/native/libSkiaSharp.framework/Info.plist": {
+            "rid": "tvos",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tvos/native/libSkiaSharp.framework/Modules/module.modulemap": {
+            "rid": "tvos",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tvos/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {
+            "rid": "tvos",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tvos/native/libSkiaSharp.framework/libSkiaSharp": {
+            "rid": "tvos",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/watchos/native/libSkiaSharp.framework/Info.plist": {
+            "rid": "watchos",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/watchos/native/libSkiaSharp.framework/Modules/module.modulemap": {
+            "rid": "watchos",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/watchos/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {
+            "rid": "watchos",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/watchos/native/libSkiaSharp.framework/libSkiaSharp": {
+            "rid": "watchos",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp.Views/2.80.0-preview.14": {
+        "dependencies": {
+          "SkiaSharp": "2.80.0-preview.14"
+        },
+        "runtime": {
+          "lib/net45/SkiaSharp.Views.Desktop.dll": {
+            "assemblyVersion": "2.80.0.0",
+            "fileVersion": "2.80.0.0"
+          }
+        }
+      },
+      "System.Memory/4.5.3": {},
+      "Marble.Core/1.0.0": {
+        "runtime": {
+          "Marble.Core.dll": {}
+        }
+      },
+      "Marble.WinForms/1.0.0": {
+        "dependencies": {
+          "Marble.Core": "1.0.0",
+          "SkiaSharp": "2.80.0-preview.14",
+          "SkiaSharp.Views": "2.80.0-preview.14"
+        },
+        "runtime": {
+          "Marble.WinForms.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Marble.Sample.WinForm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SkiaSharp/2.80.0-preview.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VawcS1FwKNLnHCdHtAbLlILy11i4M/rIhnkVmTbKCz9Uekx0AyJOvm2TyXwGef7OmVYQRaEkNnkCQ2/bqxgpkA==",
+      "path": "skiasharp/2.80.0-preview.14",
+      "hashPath": "skiasharp.2.80.0-preview.14.nupkg.sha512"
+    },
+    "SkiaSharp.Views/2.80.0-preview.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UI1mavmMAJvny8sghaGEFmCtVjf+hCqHpjWSOE8b728c+JqdweDmisudl1+IwX9rlJ0CooP2Br+dznr/ttI/7Q==",
+      "path": "skiasharp.views/2.80.0-preview.14",
+      "hashPath": "skiasharp.views.2.80.0-preview.14.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "Marble.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Marble.WinForms/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
