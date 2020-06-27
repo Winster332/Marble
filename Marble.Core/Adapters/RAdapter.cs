@@ -74,7 +74,7 @@ namespace Marble.Core.Adapters
 		{
 			get
 			{
-				return _defaultCssData ?? (_defaultCssData = CssData.Parse(this, CssDefaults.DefaultStyleSheet, false));
+				return _defaultCssData ?? (_defaultCssData = CssData.Parse(this, CssDefaults.Instance.Css, false));
 			}
 		}
 

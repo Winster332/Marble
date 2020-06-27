@@ -34,7 +34,7 @@ namespace Marble.WinForms.Adapters
 
 			foreach (var family in FontFamily.Families)
 			{
-				AddFontFamily(new FontFamilyAdapter(family));
+				AddFontFamily(new FontFamilyAdapter(family.Name));
 			}
 		}
 
@@ -136,7 +136,7 @@ namespace Marble.WinForms.Adapters
 		{
 			// var fontStyle = (FontStyle) ((int) style);
 			// return new FontAdapter(new SKFont(((FontFamilyAdapter) family).FontFamily, (float) size, fontStyle));
-			return new FontAdapter(new SKFont(SKTypeface.FromFamilyName(family.Name, DJKJLAW(style)), (float) size));
+			return new FontAdapter(new SKFont(SKTypeface.FromFamilyName(family.Name, DJKJLAW(style)), (float) size * 1.1f));
 		}
 
 		protected override object GetClipboardDataObjectInt(string html, string plainText)

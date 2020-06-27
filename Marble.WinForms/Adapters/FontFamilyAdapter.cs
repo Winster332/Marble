@@ -1,4 +1,3 @@
-using System.Drawing;
 using Marble.Core.Adapters;
 
 namespace Marble.WinForms.Adapters
@@ -8,30 +7,11 @@ namespace Marble.WinForms.Adapters
 	/// </summary>
 	internal sealed class FontFamilyAdapter : RFontFamily
 	{
-		/// <summary>
-		/// the underline win-forms font.
-		/// </summary>
-		private readonly FontFamily _fontFamily;
-
-		/// <summary>
-		/// Init.
-		/// </summary>
-		public FontFamilyAdapter(FontFamily fontFamily)
+		public FontFamilyAdapter(string fontFamily)
 		{
-			_fontFamily = fontFamily;
+			Name = fontFamily;
 		}
 
-		/// <summary>
-		/// the underline win-forms font family.
-		/// </summary>
-		public FontFamily FontFamily
-		{
-			get { return _fontFamily; }
-		}
-
-		public override string Name
-		{
-			get { return _fontFamily.Name; }
-		}
+		public override string Name { get; }
 	}
 }

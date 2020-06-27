@@ -171,6 +171,7 @@ namespace Marble.Core.System.Dom
 				{
 					case CssConstants.TableCaption:
 						_caption = box;
+						_bodyrows.Add(_caption);
 						break;
 					case CssConstants.TableRow:
 						_bodyrows.Add(box);

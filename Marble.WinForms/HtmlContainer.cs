@@ -119,7 +119,7 @@ namespace Marble.WinForms
 		{
 			ArgChecker.AssertArgNotNull(g, "g");
 
-			using (var ig = new GraphicsAdapter(g))
+			using (var ig = new SkiaAdapter(g))
 			{
 				_htmlContainerInt.PerformLayout(ig);
 			}
@@ -133,7 +133,7 @@ namespace Marble.WinForms
 		{
 			ArgChecker.AssertArgNotNull(g, "g");
 
-			using (var ig = new GraphicsAdapter(g))
+			using (var ig = new SkiaAdapter(g))
 			{
 				_htmlContainerInt.PerformPaint(ig);
 			}

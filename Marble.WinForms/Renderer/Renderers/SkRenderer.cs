@@ -94,19 +94,14 @@ namespace Marble.WinForms.Renderer.Renderers
 
 		public static SKPaint PaintFromFont(SKFont font)
 		{
-			var fontStyle = new SKFontStyle();
-			if (font.Typeface.IsBold)
-			{
-				fontStyle = SKFontStyle.Bold;
-			}
-
-			var typeface = SKTypeface.FromFamilyName(font.Typeface.FamilyName, fontStyle); // f.FontFamily.Name
+			// var fontStyle = font.Typeface.FontStyle;
+			// var typeface = SKTypeface.FromFamilyName(font.Typeface.FamilyName, fontStyle); // f.FontFamily.Name
 
 			return new SKPaint
 			{
 				// TextAlign = 
 				TextSize = font.Size * 1.2f,
-				Typeface = typeface,
+				Typeface = font.Typeface,
 			};
 		}
 

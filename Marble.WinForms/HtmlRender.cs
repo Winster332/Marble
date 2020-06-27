@@ -11,7 +11,7 @@ namespace Marble.WinForms
 		{
 			ArgChecker.AssertArgNotNull(fontFamily, "fontFamily");
 
-			WinFormsAdapter.Instance.AddFontFamily(new FontFamilyAdapter(fontFamily));
+			WinFormsAdapter.Instance.AddFontFamily(new FontFamilyAdapter(fontFamily.Name));
 		}
 
 		public static CssData ParseStyleSheet(string stylesheet, bool combineWithDefault = true)

@@ -55,19 +55,6 @@ namespace Marble.WinForms.Adapters
 			get { return _font; }
 		}
 
-		/// <summary>
-		/// Get the handle to this Font.
-		/// </summary>
-		public IntPtr HFont
-		{
-			get
-			{
-				if (_hFont == IntPtr.Zero)
-					_hFont = _font.Handle;
-				return _hFont;
-			}
-		}
-
 		public override double Size
 		{
 			get { return _font.Size; }
