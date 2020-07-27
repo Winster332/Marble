@@ -492,6 +492,9 @@ namespace Marble.Core.System.Parse
 						case HtmlConstants.Width:
 							box.Width = TranslateLength(value);
 							break;
+						default: 
+							Console.WriteLine("123");
+							break;
 					}
 				}
 			}
