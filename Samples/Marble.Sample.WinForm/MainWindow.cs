@@ -14,7 +14,7 @@ namespace Marble.Sample.WinForm
 		private readonly PrivateFontCollection _privateFont = new PrivateFontCollection();
 		public MainWindow()
 		{
-			var targetPage = PageType.Buttons;
+			var targetPage = PageType.I;
 			var pages = new Pages();
 			
 			StartPosition = FormStartPosition.CenterScreen;
