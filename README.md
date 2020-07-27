@@ -12,6 +12,10 @@
 
 ## Скриншоты
 
+![N|Solid](https://github.com/Winster332/Marble/blob/master/Screenshots/Annotation%202020-07-28%20002940.png)
+![N|Solid](https://github.com/Winster332/Marble/blob/master/Screenshots/Annotation%202020-07-28%20003054.png)
+![N|Solid](https://github.com/Winster332/Marble/blob/master/Screenshots/Annotation%202020-07-28%20003133.png)
+
 ## LICENCE
 -------
 [GNU General Public License v3.0 ](https://github.com/Winster332/Marble/blob/master/LICENSE)
