@@ -14,4 +14,4 @@
 
 ## LICENCE
 -------
-[Тут будет лицензия](https://github.com/mono/SkiaSharp)
+[GNU General Public License v3.0 ](https://github.com/Winster332/Marble/blob/master/LICENSE)
