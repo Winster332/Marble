@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
 	<PropertyGroup>
 		<TargetFramework>netcoreapp3.1</TargetFramework>
@@ -10,7 +10,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="SkiaSharp" Version="2.80.0-preview.14" />
+	  <PackageReference Include="SkiaSharp" Version="2.88.6" />
 	  <PackageReference Include="SkiaSharp.Views" Version="2.80.0-preview.14" />
 	</ItemGroup>
 
